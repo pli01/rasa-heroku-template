@@ -31,7 +31,7 @@ Run a terminal (or console) on your machine and type
 heroku login
 heroku git:clone -a <your Heroku application name>
 cd <your Heroku application name>
-git remote add origin https://github.com/just-ai/rasa-heroku-template
+git remote add origin https://github.com/pli01/rasa-heroku-template
 git pull origin master
 ```
 
