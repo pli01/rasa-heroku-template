@@ -7,6 +7,8 @@ USER root
 RUN chmod -R 777 /app
 USER 1001
 
-RUN rasa x train nlu
+WORKDIR /app
+# FIXME: rasa-x load with http api 
+#RUN ( cd /app && rasa train -v --force nlu )
 
 ENTRYPOINT ["/app/server.sh"]
